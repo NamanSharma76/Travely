@@ -213,7 +213,7 @@ The platform strictly separates **Server Components** (for fast, SEO-friendly da
 
 Forms utilize `react-hook-form` to prevent unnecessary re-renders, paired with `zod` for strict schema validation. This ensures data integrity before it reaches the `api/` route handlers.
 
-### Relational Data/ Schema
+## Relational Data/ Schema
 
 The database leverages deep relations. For example, the `PackageStoriesSection.tsx` component relies on a two-way connection where a `Story` belongs to a `Package`, and a `Package` is owned by a `Provider`.
 
