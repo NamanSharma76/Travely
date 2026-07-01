@@ -136,7 +136,7 @@ Follow these steps to set up the project locally.
 ### 2. Clone the Repository
 
 ```bash
-git clone [https://github.com/yourusername/travely.git](https://github.com/yourusername/travely.git)
+git clone [https://github.com/NamanSharma76/travely.git](https://github.com/NamanSharma76/travely.git)
 cd travely
 
 ```
