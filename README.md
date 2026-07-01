@@ -182,7 +182,8 @@ Create a `.env` file in the root of your project:
 
 ```env
 # Database Connection
-DATABASE_URL="postgresql://user:password@localhost:5432/travelydb"
+DATABASE_URL="postgresql://user:password@localhost:6543/postgres?postgres?pgbouncer=true&connection_limit=1&sslmode=require"
+DIRECT_URL="postgresql://user:password@localhost:5432/postgres?sslmode=require"
 
 # NextAuth Configuration
 NEXTAUTH_SECRET="generate-a-secure-random-string"
@@ -193,11 +194,20 @@ GOOGLE_CLIENT_ID="your-google-client-id"
 GOOGLE_CLIENT_SECRET="your-google-client-secret"
 
 # AI Integration
-GEMINI_API_KEY="your-gemini-api-key"
+GROQ_API_KEY="your-gemini-api-key"
 
 # Payment Gateway (Optional)
 RAZORPAY_KEY_ID="your-razorpay-key"
 RAZORPAY_KEY_SECRET="your-razorpay-secret"
+NEXT_PUBLIC_RAZORPAY_KEY_ID="your-next-public-razorpay-key-id"
+
+#Twilio Integration for login with mobile number
+TWILIO_ACCOUNT_SID="your-twilio-sid"
+TWILIO_AUTH_TOKEN="your-twilio-authentication-token"
+TWILIO_PHONE_NUMBER="your-twilio-phone-number"
+
+# Resend Api key
+RESEND_API_KEY="your-resend-api-key"
 
 ```
 
